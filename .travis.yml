@@ -43,6 +43,5 @@ script: ./gradlew :app:build
 notifications:
   email:
     recipients:
-    - wocy01@gmail.com
     on_failure: always
     on_success: always
