@@ -1,5 +1,6 @@
 package com.example.mobsoft.cookbook.ui.recipeDetails;
 
+import com.example.mobsoft.cookbook.ui.BaseScreen;
 import com.example.mobsoft.cookbook.ui.Presenter;
 import com.example.mobsoft.cookbook.ui.main.MainScreen;
 
@@ -12,7 +13,7 @@ public class RecipeDetailsPresenter extends Presenter<RecipeDetailsScreen> {
 
         }
 
-        public void attachScreen(MainScreen screen) {
+        public void attachScreen(BaseScreen screen) {
             super.attachScreen((RecipeDetailsScreen) screen);
         }
 

@@ -2,6 +2,7 @@ package com.example.mobsoft.cookbook.ui;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
 import com.example.mobsoft.cookbook.R;
 
@@ -20,7 +21,7 @@ public class BaseActivity extends AppCompatActivity implements BaseScreen{
 
     @Override
     public void showMessage(String msg) {
-
+        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }
 
     @Override
