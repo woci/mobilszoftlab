@@ -42,4 +42,9 @@ public class RecipesActivity extends BaseActivity implements RecipesScreen {
     public void showRecipes(List<Recipe> recipeList) {
 
     }
+
+    @Override
+    public void goToRecipeDetails(Recipe recipe) {
+
+    }
 }

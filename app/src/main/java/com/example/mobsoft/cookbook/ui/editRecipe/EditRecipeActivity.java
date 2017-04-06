@@ -36,9 +36,4 @@ public class EditRecipeActivity extends BaseActivity implements EditRecipeScreen
         super.onStop();
         editRecipePresenter.detachScreen();
     }
-
-    @Override
-    public void navigateToRecipesActivity() {
-
-    }
 }

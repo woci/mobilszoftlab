@@ -7,4 +7,5 @@ package com.example.mobsoft.cookbook.ui;
 public interface BaseScreen {
     void showMessage(String msg);
     void showLoader(Boolean show);
+    void navigateBack();
 }

@@ -20,4 +20,8 @@ public class EditRecipePresenter extends Presenter<EditRecipeScreen> {
     public void detachScreen() {
         super.detachScreen();
     }
+
+    public void btnSavePressed(){
+
+    }
 }

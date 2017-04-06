@@ -5,4 +5,5 @@ package com.example.mobsoft.cookbook.data;
  */
 
 public class Recipe {
+
 }

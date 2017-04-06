@@ -35,8 +35,14 @@ public class RecipeDetailsActivity extends BaseActivity implements RecipeDetails
         super.onStop();
         recipeDetailsPresenter.detachScreen();
     }
-    @Override
-    public void showRecipeDetails(Recipe recipe) {
 
+    @Override
+    public void showRecipeDetails() {
+
+    }
+
+    @Override
+    public void goToEditRecipeActivity() {
+        
     }
 }

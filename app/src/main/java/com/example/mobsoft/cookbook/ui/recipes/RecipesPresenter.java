@@ -21,4 +21,12 @@ public class RecipesPresenter extends Presenter<RecipesScreen> {
     public void detachScreen() {
         super.detachScreen();
     }
+
+    public void cellRecipePressed(){
+
+    }
+
+    public void getRecipes(){
+
+    }
 }

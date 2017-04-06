@@ -7,5 +7,6 @@ import com.example.mobsoft.cookbook.data.Recipe;
  */
 
 public interface RecipeDetailsScreen {
-    void showRecipeDetails(Recipe recipe);
+    public void showRecipeDetails();
+    public void goToEditRecipeActivity();
 }

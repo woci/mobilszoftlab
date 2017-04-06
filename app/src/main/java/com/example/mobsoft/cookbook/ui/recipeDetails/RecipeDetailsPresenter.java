@@ -21,4 +21,8 @@ public class RecipeDetailsPresenter extends Presenter<RecipeDetailsScreen> {
         public void detachScreen() {
             super.detachScreen();
         }
+
+        public void btnEditPressed(){
+
+        }
 }

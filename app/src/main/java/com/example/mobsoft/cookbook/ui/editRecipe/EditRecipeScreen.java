@@ -5,5 +5,4 @@ package com.example.mobsoft.cookbook.ui.editRecipe;
  */
 
 public interface EditRecipeScreen {
-    void navigateToRecipesActivity();
 }

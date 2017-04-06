@@ -28,4 +28,9 @@ public class BaseActivity extends AppCompatActivity implements BaseScreen{
     public void showLoader(Boolean show) {
 
     }
+
+    @Override
+    public void navigateBack() {
+
+    }
 }

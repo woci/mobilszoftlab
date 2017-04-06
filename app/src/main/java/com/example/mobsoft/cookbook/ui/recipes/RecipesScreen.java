@@ -10,4 +10,5 @@ import java.util.List;
 
 public interface RecipesScreen {
     void showRecipes(List<Recipe> recipeList);
+    void goToRecipeDetails(Recipe recipe);
 }
