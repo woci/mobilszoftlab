@@ -38,6 +38,7 @@ public class RecipesActivity extends BaseActivity implements RecipesScreen {
         recipesPresenter.detachScreen();
     }
 
+    //RecipesScreen interface implementation
     @Override
     public void showRecipes(List<Recipe> recipeList) {
 

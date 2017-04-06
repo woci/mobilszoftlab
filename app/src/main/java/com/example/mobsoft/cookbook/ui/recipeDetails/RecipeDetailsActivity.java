@@ -36,6 +36,7 @@ public class RecipeDetailsActivity extends BaseActivity implements RecipeDetails
         recipeDetailsPresenter.detachScreen();
     }
 
+    //RecipeDetailsScreen interface implementation
     @Override
     public void showRecipeDetails() {
 
@@ -43,6 +44,6 @@ public class RecipeDetailsActivity extends BaseActivity implements RecipeDetails
 
     @Override
     public void goToEditRecipeActivity() {
-        
+
     }
 }
