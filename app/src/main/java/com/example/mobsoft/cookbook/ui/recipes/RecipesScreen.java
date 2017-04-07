@@ -1,6 +1,6 @@
 package com.example.mobsoft.cookbook.ui.recipes;
 
-import com.example.mobsoft.cookbook.data.Recipe;
+import com.example.mobsoft.cookbook.model.Recipe;
 
 import java.util.List;
 

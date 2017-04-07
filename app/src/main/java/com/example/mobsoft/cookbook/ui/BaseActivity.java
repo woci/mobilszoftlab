@@ -5,6 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import com.example.mobsoft.cookbook.R;
+import com.example.mobsoft.cookbook.model.Recipe;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Mobsoft on 2017. 03. 24..
@@ -26,7 +30,6 @@ public class BaseActivity extends AppCompatActivity implements BaseScreen{
 
     @Override
     public void showLoader(Boolean show) {
-
     }
 
     @Override

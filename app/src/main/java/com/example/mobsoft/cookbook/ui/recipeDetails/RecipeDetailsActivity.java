@@ -4,7 +4,6 @@ import android.os.Bundle;
 
 import com.example.mobsoft.cookbook.MobSoftApplication;
 import com.example.mobsoft.cookbook.R;
-import com.example.mobsoft.cookbook.data.Recipe;
 import com.example.mobsoft.cookbook.ui.BaseActivity;
 import com.example.mobsoft.cookbook.ui.BaseScreen;
 
