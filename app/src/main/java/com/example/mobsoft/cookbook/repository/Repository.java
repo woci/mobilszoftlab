@@ -14,6 +14,8 @@ public interface Repository {
     void open(Context context);
     void close();
     List<Recipe> getRecipes();
+    Recipe getRecipe(Integer id);
     void saveRecipe(Recipe recipe);
-    void uploadRecipes(List<Recipe> recipes);
+    void updateRecipe(Recipe recipe);
+    Long getNextMinId();
 }
