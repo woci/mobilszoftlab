@@ -18,4 +18,5 @@ public interface Repository {
     void saveRecipe(Recipe recipe);
     void updateRecipe(Recipe recipe);
     Long getNextMinId();
+    void removeRecipe(Recipe recipe);
 }

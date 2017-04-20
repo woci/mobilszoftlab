@@ -5,8 +5,6 @@ import android.os.Bundle;
 import com.example.mobsoft.cookbook.MobSoftApplication;
 import com.example.mobsoft.cookbook.R;
 import com.example.mobsoft.cookbook.ui.BaseActivity;
-import com.example.mobsoft.cookbook.ui.BaseScreen;
-import com.example.mobsoft.cookbook.ui.recipes.RecipesPresenter;
 
 /**
  * Created by Mobsoft on 2017. 03. 24..
@@ -28,7 +26,7 @@ public class EditRecipeActivity extends BaseActivity implements EditRecipeScreen
     @Override
     protected void onStart() {
         super.onStart();
-        editRecipePresenter.attachScreen((BaseScreen) this);
+        editRecipePresenter.attachScreen(this);
     }
 
     @Override

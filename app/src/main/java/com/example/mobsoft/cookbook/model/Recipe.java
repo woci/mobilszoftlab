@@ -1,7 +1,6 @@
 package com.example.mobsoft.cookbook.model;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by Mobsoft on 2017. 03. 24..
@@ -10,16 +9,20 @@ import java.util.List;
 public class Recipe {
     private Long id = null;
     private String name;
-    private ArrayList<String> ingridients;
+    private ArrayList<String> ingredients;
     private String description;
     private String imageUrl;
 
-    public Recipe(Long id, String name, ArrayList<String> ingridients, String description, String imageUrl) {
+    public Recipe(Long id, String name, ArrayList<String> ingredients, String description, String imageUrl) {
         this.id = id;
         this.name = name;
-        this.ingridients = ingridients;
+        this.ingredients = ingredients;
         this.description = description;
         this.imageUrl = imageUrl;
+    }
+
+    public Recipe() {
+
     }
 
     public Long getId() {
@@ -38,11 +41,11 @@ public class Recipe {
     }
 
     public ArrayList<String> getIngridients() {
-        return ingridients;
+        return ingredients;
     }
 
     public void setIngridients(ArrayList<String> ingridients) {
-        this.ingridients = ingridients;
+        this.ingredients = ingridients;
     }
 
     public String getDescription() {

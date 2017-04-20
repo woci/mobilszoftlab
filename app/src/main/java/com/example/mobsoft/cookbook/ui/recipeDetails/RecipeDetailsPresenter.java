@@ -1,8 +1,6 @@
 package com.example.mobsoft.cookbook.ui.recipeDetails;
 
-import com.example.mobsoft.cookbook.ui.BaseScreen;
 import com.example.mobsoft.cookbook.ui.Presenter;
-import com.example.mobsoft.cookbook.ui.main.MainScreen;
 
 /**
  * Created by Mobsoft on 2017. 03. 24..
@@ -13,8 +11,8 @@ public class RecipeDetailsPresenter extends Presenter<RecipeDetailsScreen> {
 
         }
 
-        public void attachScreen(BaseScreen screen) {
-            super.attachScreen((RecipeDetailsScreen) screen);
+        public void attachScreen(RecipeDetailsScreen screen) {
+            super.attachScreen(screen);
         }
 
         @Override

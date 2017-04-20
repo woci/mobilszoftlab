@@ -6,7 +6,6 @@ import com.example.mobsoft.cookbook.MobSoftApplication;
 import com.example.mobsoft.cookbook.R;
 import com.example.mobsoft.cookbook.model.Recipe;
 import com.example.mobsoft.cookbook.ui.BaseActivity;
-import com.example.mobsoft.cookbook.ui.BaseScreen;
 
 import java.util.List;
 
@@ -29,7 +28,7 @@ public class RecipesActivity extends BaseActivity implements RecipesScreen {
     @Override
     protected void onStart() {
         super.onStart();
-        recipesPresenter.attachScreen((BaseScreen) this);
+        recipesPresenter.attachScreen(this);
     }
 
     @Override
@@ -41,11 +40,6 @@ public class RecipesActivity extends BaseActivity implements RecipesScreen {
     //RecipesScreen interface implementation
     @Override
     public void showRecipes(List<Recipe> recipeList) {
-
-    }
-
-    @Override
-    public void goToRecipeDetails(Recipe recipe) {
 
     }
 }

@@ -5,7 +5,7 @@ package com.example.mobsoft.cookbook.ui;
  */
 
 public class Presenter<S> {
-    S screen;
+    protected S screen;
 
     public void attachScreen(S screen) {
         this.screen = screen;

@@ -30,6 +30,7 @@ public class SugarOrmRepository implements Repository {
 
     @Override
     public void saveRecipe(Recipe recipe) {
+        recipe.setId(getNextMinId());
         SugarRecord.saveInTx(recipe);
     }
 

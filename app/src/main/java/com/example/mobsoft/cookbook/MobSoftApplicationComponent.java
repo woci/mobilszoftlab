@@ -1,10 +1,14 @@
 package com.example.mobsoft.cookbook;
 
+import com.example.mobsoft.cookbook.interactor.InteractorModule;
+import com.example.mobsoft.cookbook.interactor.recipes.RecipesInteractor;
+import com.example.mobsoft.cookbook.repository.RepositoryModule;
 import com.example.mobsoft.cookbook.ui.BaseActivity;
 import com.example.mobsoft.cookbook.ui.UIModule;
 import com.example.mobsoft.cookbook.ui.editRecipe.EditRecipePresenter;
 import com.example.mobsoft.cookbook.ui.main.MainPresenter;
 import com.example.mobsoft.cookbook.ui.recipeDetails.RecipeDetailsPresenter;
+import com.example.mobsoft.cookbook.ui.recipes.RecipesActivity;
 import com.example.mobsoft.cookbook.ui.recipes.RecipesPresenter;
 
 import javax.inject.Singleton;
@@ -16,13 +20,15 @@ import dagger.Component;
  */
 
 @Singleton
-@Component(modules = {UIModule.class})
+@Component(modules = {UIModule.class,RepositoryModule.class, InteractorModule.class})
 public interface MobSoftApplicationComponent {
     void inject(BaseActivity mainActivity);
+    void inject(RecipesActivity recipesActivity);
     void inject(MobSoftApplication mobSoftApplication);
     void inject(MainPresenter mainPresenter);
     void inject(EditRecipePresenter editRecipePresenter);
     void inject(RecipeDetailsPresenter recipeDetailsPresenter);
     void inject(RecipesPresenter recipesPresenter);
+    void inject(RecipesInteractor recipesInteractor);
 
 }
